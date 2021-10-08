@@ -1,0 +1,108 @@
+.navbar {
+    padding: 2rem 0;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    /* font-family: 'Zilla Slab', serif; */
+}
+
+.navbar__links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.navbar__elem {
+    padding: 0 1.5rem;
+    font-size: 2rem;
+}
+
+.navbar__link {
+    padding-bottom: .5rem;
+    transition: border-bottom 90ms linear;
+}
+
+.navbar__link:hover, .navbar__link:focus {
+    border-bottom: 3px solid #5F9EA0;
+}
+
+@keyframes hamburger {
+    100% {
+        left: 0;
+    }
+}
+
+.animate {
+    /* animation: hamburger 500ms linear forwards; */
+    transform: translateX(550px);
+}
+
+.navbar__hamburger {
+    position: fixed;
+    right: 1rem;
+    top: 2rem;
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .navbar__elem {
+        font-size: 1.6rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .navbar {
+        /* position: absolute; */
+        position: fixed;
+        z-index: 1;
+        /* left: min(-300px, -80%); */ 
+        /* left: calc(0px - min(300px, 80%)); */
+        left: -550px;
+        transition: transform 300ms linear;
+        /* transition: transform 1s linear; */
+        /* animation: hamburger 500ms linear forwards; */
+        /* transform: translateX(min(300px, 80%)); */
+        /* width: 80%; */
+        width: min(300px, 80%);
+        height: 100vh;
+    }
+
+    .navbar__hamburger {
+        display: block;
+    }
+
+    .navbar__links {
+        flex-direction: column;
+        /* text-align: right; */
+    }
+
+    .navbar__elem {
+        padding: 2rem 0 2rem 4rem;
+        font-size: 2rem;
+    }
+
+    .navbar__elem + .navbar__elem::before {
+        content: "";
+        width: 70%;
+        position: absolute;
+        transform: translateY(-2.4rem);
+        border-top: 1px solid black;
+    }
+
+    /* .navbar__link::after {
+        content: "";
+        width: 80%;
+        position: absolute;
+        border-top: 1px solid black;
+    } */
+
+    .navbar__link {
+        border: none;
+    }
+
+    .navbar__link:hover, .navbar__link:focus {
+        border-bottom: none;
+    }
+}

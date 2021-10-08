@@ -1,0 +1,57 @@
+.about {
+    font-size: 1.6rem;
+    padding-bottom: 3rem;
+    margin: 3rem 0;
+    background: linear-gradient(#fff, #F0FFFF);
+}
+
+.about__title {
+    font-size: 2.8rem;
+    text-indent: 2rem;
+    font-family: 'DM Serif Display', serif;
+    font-weight: 300;
+    margin-bottom: 3rem;
+}
+
+.about__figure {
+    display: inline-block;
+}
+
+.about__img {
+    border-radius: 50%;
+    width: 20rem;
+}
+
+.about__caption {
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 1.8rem;
+    font-family: 'DM Serif Display', serif;
+}
+
+.about__container {
+    display: flex;
+    max-width: 100rem;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.about__right {
+    padding-left: 4rem;
+    max-width: 60%;
+    text-align: justify;
+}
+
+.about__text {
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+    .about__left {
+        display: none;
+    }
+
+    .about__right {
+        max-width: 90%;
+    }
+}

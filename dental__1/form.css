@@ -1,0 +1,65 @@
+.form {
+    /* margin: 0 auto; */
+    margin-bottom: 9rem;
+}
+
+.form__form {
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    flex-shrink: 1;
+    flex-grow: 0;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 2rem;
+    /* border-radius: 1rem; */
+    border: 1px solid #dfedee;
+    border-radius: 1.4rem;
+    box-shadow: 2px 4px 5px 3px #dfedee;
+    /* font-size: 2rem; */
+}
+
+.form__input {
+    padding: .6rem 1rem;
+    /* outline: none; */
+    border: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+}
+
+.form__input::placeholder {
+    font-family: 'Space Mono', monospace;
+}
+
+.form__textarea {
+    width: 100%;
+    min-height: 16rem;
+    padding: .7rem;
+    font-size: 1.6rem;
+    border: none;
+    background-color: #eff8f8;
+    border-radius: .5rem;
+    border: 1px solid #c8d7d8;
+}
+
+.form__textarea::placeholder {
+    font-family: 'Space Mono', monospace;
+}
+
+.form__submit {
+    border: none;
+    display: inline-block;
+    padding: .6em 2em;
+    /* margin: 3rem; */
+    /* margin-top: 1rem; */
+    margin: 3rem 0 2rem;
+    background-color: #5F9EA0;
+    color: #fff;
+    font-size: 1.8rem;
+    border-radius: 10rem;
+    font-weight: 600;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

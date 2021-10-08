@@ -1,0 +1,29 @@
+.footer {
+    background-color: #5F9EA0;
+    color: #fff;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.footer__col {
+    padding-right: 20rem;
+}
+
+.footer__title {
+    font-family: 'DM Serif Display', serif;
+    font-weight: 300;
+    letter-spacing: .12rem;
+    padding-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .footer__col {
+        padding-right: 5%;
+    }
+
+    .footer__title {
+        font-size: 1.8rem;
+    }
+}

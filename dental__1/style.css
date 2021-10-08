@@ -1,0 +1,115 @@
+@import url("base.css");
+/* @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Zilla+Slab:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,700&display=swap');
+@import url('navbar.css');
+@import url('about.css');
+@import url('opinions.css');
+@import url('offer.css');
+@import url('form.css');
+@import url('footer.css');
+
+.contact-top {
+    background-color: #dfedee;
+    padding: .4rem 0;
+    font-size: 1.8rem;
+}
+
+.contact-top__container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    /* font-size: 5rem; */
+}
+
+.contact-top__box {
+    display: flex;
+}
+
+.contact-top__elem {
+    padding-right: 1rem;
+}
+
+.contact-top__elem + .contact-top__elem::before {
+    content: '|';
+    padding-right: 1rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-family: 'DM Serif Display', serif;
+    color: #5F9EA0;
+    background-color: #fff;
+    padding: 1rem 0;
+}
+
+.logo__img {
+    width: 50px;
+    margin-right: 4rem;
+}
+
+
+.carousel {
+    padding: 3rem 0;
+}
+
+.carousel__img {
+    /* child element hasn't got fixed width, so margin: 0 auto wont work */
+    display: flex;
+}
+
+.carousel__img-img {
+    /* width: 100%; */
+    max-width: 80%;
+    margin: 0 auto;
+    height: auto;
+}
+
+.appointment {
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 3rem 0;
+}
+
+.appointment__container {
+    max-width: 100rem;
+    margin: 0 auto;
+}
+
+.appointment__text {
+    max-width: 60%;
+    margin: 0 auto;
+    font-family: 'Zilla Slab', serif;
+    font-weight: 400;
+}
+
+.appointment__title {
+    font-size: 4rem;
+    font-family: 'DM Serif Display', serif;
+    padding-bottom: 3rem;
+}
+
+@media (max-width: 768px) {
+    .contact-top {
+        display: none;
+    }
+    .logo {
+        font-size: 1.7rem;
+        position: sticky;
+        top: 0;
+        /* top: 70px; */
+    }
+    .logo__img {
+        display: none;
+    }
+
+    .carousel img {
+        max-width: 90%;
+    }
+
+}
+

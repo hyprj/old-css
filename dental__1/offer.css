@@ -1,0 +1,64 @@
+.offer {
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.offer__title {
+    font-size: 2.8rem;
+    font-family: 'DM Serif Display', serif;
+    padding-bottom: 4rem;
+}
+
+.offer__text {
+    max-width: 50%;
+    margin: 0 auto;
+    padding-bottom: 4rem;
+}
+
+.offer__section {
+    padding-bottom: 4rem;
+}
+
+.offer__branch-name {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+
+.offer__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.offer__link {
+    color: #636363;
+    font-weight: 500;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.offer__link:hover, .offer__link:focus {
+    color: black;
+}
+
+.offer__elem {
+    flex-basis: 50%;
+    display: inline;
+    text-align: right;
+    padding: .8rem 4rem;
+}
+
+.offer__elem:nth-child(2n) {
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .offer__text {
+        max-width: 80%;
+    }
+    .offer__list {
+        /* flex-basis: 100%; */
+        flex-direction: column;
+        align-items: center;
+    }
+}
