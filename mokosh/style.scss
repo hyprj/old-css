@@ -1,0 +1,265 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    // height: auto;
+    display: inline-block;
+}
+
+.opinions {
+    writing-mode: vertical-lr;
+    transform: rotateZ(180deg);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.6rem;
+}
+
+.menu {
+    position: fixed;
+    z-index: 100;
+    padding: 1.6rem 3.4rem;
+    top: 0;
+    left: 0;
+    font-size: 1.6rem;
+    &__title {
+        font-size: 5rem;
+        font-weight: 200;
+        padding-bottom: 3rem;
+    }
+    &__list {
+        list-style: none;
+    }
+    &__elem {
+        padding: .8rem 0;
+    }
+    &__link {
+        text-decoration: none;
+        color: rgb(71, 71, 71);
+        &:hover, &:focus {
+            color: black;
+        }
+    }
+}
+
+.opinions {
+    position: fixed;
+    right: 0;
+    top: 24vh;
+    padding: 2.4rem 1rem;
+    background-color: black;
+    color: #fff;
+    font-size: 1.4rem;
+    letter-spacing: .3rem;
+}
+
+.menu-right {
+    position: fixed;
+    right: 4.4rem;
+    top: 3rem;
+    text-align: right;
+
+    &__elem {
+        padding: .6rem 0;
+        font-weight: 300;
+    }
+}
+
+.content {
+    max-width: 1000px;
+    margin: 12rem auto 0;
+
+    &__container {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.section {
+    display: grid;
+    grid-template-columns: 28rem 28rem 28rem;
+    grid-template-rows: 36rem 36rem;
+    grid-auto-flow: row dense;
+    gap: 3rem;
+}
+
+.card {
+    &__bg-img {
+
+        object-fit:cover;
+        height: 100%;
+        width: 100%;
+    }
+    &--img {
+        padding: 0;
+        background: url('../images/gridh2.jpg') no-repeat center;
+    }
+    &__text-sm {
+        font-size: 1.2rem;
+    }
+    &__text-lg {
+        font-size: 5rem;
+        padding-bottom: 1rem;
+    }
+    &__link {
+        color: black;
+    }
+    &__img {
+        width: 100%;
+        transition: transform 100ms ease-in-out;
+        &:hover {
+            transform: scale(0.98);
+        }
+        img {
+            width: 100%;
+        }
+    }
+    &__product-name {
+        padding-bottom: 1.2rem;
+    }
+    &__price {
+        color: rgb(218, 108, 126);
+        font-size: 1.7rem;
+    }
+    &--product {
+        border-bottom: 1px solid black;
+        cursor: pointer;
+    }
+}
+
+.text {
+    padding: 7rem 2rem 0;
+}
+
+.h2 {
+    grid-row: span 2;
+}
+
+.w2 {
+    grid-column-end: span 2;
+}
+
+.affirmation {
+    display: flex;
+    justify-content: center;
+    margin: 22rem auto;
+    // &::before {
+    //     content: 'B2B';
+    //     width: 150px;
+    //     height: 5px;
+    //     color: black;
+    //     border-right: 1px solid black;
+    // }
+
+    &__img {
+        position: relative;
+    }
+    &__vertical-text {
+        position: absolute;
+        left: 50px;
+        top: -150px;
+        transform: rotate(270deg);
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: -153px;
+            top: 7px;
+            width: 150px !important;
+            height: 1px;
+            border-top: 2px solid black;
+        }
+    }
+
+    &__about {
+        max-width: 500px;
+        padding: 1rem 7rem;
+        
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        list-style:square;
+    }
+    &__list-elem {
+        padding: .5rem;
+        flex-basis: 50%;
+    }
+
+    &__header {
+        font-weight: 400;
+        padding: 4rem 0;
+      
+    }
+    &__text {
+        line-height: 1.4;
+        padding-bottom: 3rem;
+        width: 85%;
+    }
+}
+
+.about {
+    max-width: 60rem;
+    margin: 0 auto;
+    color: rgb(105, 105, 105);
+
+    &__container {
+        background-color: rgb(243, 243, 243);
+        padding: 6rem;
+    }
+    &__header {
+        padding-bottom: 2rem;
+        font-size: 3.6rem;
+        color: black;
+    }
+    &__text {
+        padding-bottom: 1.6rem;
+    }
+    &__text:last-of-type {
+        padding-bottom: 4rem;
+    }
+    &__link {
+        color: black;
+        text-decoration: none;
+    }
+}
+
+.footer {
+    background-color: rgb(37, 37, 37);
+    color: #fff;
+    padding: 6rem 0;
+    font-size: 1.5rem;
+    &__container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    &__header {
+        color: #ddd;
+        font-size: 1.2rem;
+        padding-bottom: .6rem;
+    }
+    &__list {
+        list-style: none;
+    }
+    &__elem {
+        padding: .5rem 0;
+    }
+    &__link {
+        color: #fff;
+        text-decoration: none;
+    }
+    &__box {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
